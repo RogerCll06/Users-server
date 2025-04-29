@@ -13,5 +13,3 @@ spring.jpa.hibernate.ddl-auto=create
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
 spring.jpa.properties.hibernate.format_sql=true
 
-security.jwt.key.private=cb0bf0cb4921bb9602e27ce65b34c339ef926f2d4a982e299924d23baca18a43
-security.jwt.user.generator=AUTH0JWT-BACKEND

@@ -1,0 +1,4 @@
+package visionaris.pe.dto.request;
+
+public class LoginRequest {
+}

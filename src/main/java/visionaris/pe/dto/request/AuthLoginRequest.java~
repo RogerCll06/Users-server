@@ -1,0 +1,8 @@
+package visionaris.pe.dto.request;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+
+public class AuthLoginRequest (@NotBlank @Email String email,
+                               String password) {
+}
