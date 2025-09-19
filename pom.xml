@@ -13,7 +13,7 @@
 
     <groupId>pry</groupId>
     <artifactId>users-Server</artifactId>
-    <version>v1.0.0</version>
+    <version>v1.0.2</version>
     <name>users-Server</name>
     <description>users-Server</description>
 
