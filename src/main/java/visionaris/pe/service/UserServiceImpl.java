@@ -17,12 +17,19 @@ import visionaris.pe.entity.Users;
 import visionaris.pe.repository.UsersRepository;
 
 @Service
-@RequiredArgsConstructor
+
 public class UserServiceImpl  {
     private final UsersRepository usersRepository;
     private final PasswordEncoder passwordEncoder;
     private final AuthenticationManager authenticationManager;
     private final JwtUtils jwtUtils;
+
+    public UserServiceImpl(UsersRepository usersRepository, PasswordEncoder passwordEncoder, AuthenticationManager authenticationManager, JwtUtils jwtUtils) {
+        this.usersRepository = usersRepository;
+        this.passwordEncoder = passwordEncoder;
+        this.authenticationManager = authenticationManager;
+        this.jwtUtils = jwtUtils;
+    }
 
 
     public AuthResponseDto register(AuthRegisterRequest request) {
